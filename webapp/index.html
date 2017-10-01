@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Cssimgicon</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.ui.commons"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"CssimgiconCssimgicon": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+		var button = new sap.ui.commons.Button("buttonId",{
+			text:"Click Me",
+			press:function(){
+				alert("Button Clicked")
+			}
+		});
+		button.addStyleClass("myButton");
+		button.placeAt("content");
+/*			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "CssimgiconCssimgicon"
+					})
+				}).placeAt("content");
+			});*/
+		</script>
+		
+<!--Internal CSS example		-->
+/*		<style type = "text/css">
+			#buttonId {
+				font-family: Arial;
+				font-size: 14px;
+				background-color:Yellow;
+				width:115px;
+				height:100px;
+			}
+		</style>*/
+		
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>
